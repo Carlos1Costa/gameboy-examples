@@ -1,12 +1,14 @@
 # Prepare the Linux enviromment
 
-First you need to install some dependencies: SDCC (with its libraries), GNU Make, git. This can be installed with the following command on Debian / Ubuntu:
+**Before anything**: Download and install VSCode for your Linux distribution. https://code.visualstudio.com/
+
+Then you need to install some dependencies: SDCC (with its libraries), GNU Make, git. This can be installed with the following command on Debian / Ubuntu:
 
     sudo apt install build-essential sdcc sdcc-libraries git
 
 Then clone this repository and get submodules:
 
-    git clone https://github.com/flozz/gameboy-examples.git
+    git clone https://github.com/Carlos1Costa/gameboy-examples
     cd gameboy-examples
     git submodule init
     git submodule update
