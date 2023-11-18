@@ -36,7 +36,12 @@ If you want to cleanup the folder from all generated files
 
     make clean
 
-You can now run the generated `.gb` file with your favorite emulator.
+You can now run the generated `.gb` file with our favorite emulator: (Sameboy)[https://sameboy.github.io/].
+
+## Install and using Sameboy
+
+SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
+and a libretro core. It also includes a text-based debugger with an expression evaluator.
 
 # Examples Index (GameBoy Code)
 
