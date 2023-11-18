@@ -2,11 +2,14 @@
 
 **Before anything**: Download and install VSCode for your Linux distribution https://code.visualstudio.com/
 
-Then you need to install some dependencies: SDCC (with its libraries), GNU Make, git.
+Then you need to install some dependencies: [SDCC](https://sdcc.sourceforge.net/) 
+(with its [sdcc-libraries](https://packages.debian.org/sid/sdcc-libraries)), 
+GNU Make (install build-essential), and git.
 
 This can be installed with the following command on Debian / Ubuntu:
-
-    sudo apt install build-essential sdcc sdcc-libraries git
+    
+    sudo apt update
+    sudo apt install build-essential sdcc sdcc-libraries git build-essential
 
 Then clone this repository and get submodules:
 
@@ -27,16 +30,19 @@ For example, if you want to build the "Hello World" example, you will have to ru
     cd 01-hello-world/
     make
 
-You can now run the generated `.gb` file with your favorite emulator.
 
-If you want to cleanup the folder from all generated files (`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
+If you want to cleanup the folder from all generated files 
+(`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
 
     make clean
 
+You can now run the generated `.gb` file with your favorite emulator.
 
 # Examples Index (GameBoy Code)
 
-This repository contains example programs for the Nintendo GameBoy video game console. The examples are related to articles on my blog (in French).
+This repository contains example programs for the Nintendo GameBoy video game console. 
+The examples are originally related to this git https://github.com/flozz/gameboy-examples repository.
+I have been modified and even including news since I forked the project.
 
 
 | Screenshot                                              | Name                                                       | Description                                                                  |
