@@ -1,8 +1,10 @@
 # Prepare the Linux enviromment
 
-**Before anything**: Download and install VSCode for your Linux distribution. https://code.visualstudio.com/
+**Before anything**: Download and install VSCode for your Linux distribution https://code.visualstudio.com/
 
-Then you need to install some dependencies: SDCC (with its libraries), GNU Make, git. This can be installed with the following command on Debian / Ubuntu:
+Then you need to install some dependencies: SDCC (with its libraries), GNU Make, git.
+
+This can be installed with the following command on Debian / Ubuntu:
 
     sudo apt install build-essential sdcc sdcc-libraries git
 
@@ -19,7 +21,8 @@ Then you have to build the gbdk-n library (this needs to be done only once):
     make
     cd ..
 
-Finally, you can build examples with the `make` command from the directory of the example. For example, if you want to build the "Hello World" example, you will have to run the following commands:
+Finally, you can build examples with the `make` command from the directory of the example. 
+For example, if you want to build the "Hello World" example, you will have to run the following commands:
 
     cd 01-hello-world/
     make
