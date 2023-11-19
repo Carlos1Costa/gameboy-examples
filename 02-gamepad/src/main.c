@@ -16,7 +16,7 @@ void demo_waitpad_2(void) {
 }
 
 void demo_waitpad_3(void) {
-    UINT8 key;
+    uint8_t key;
     printf("Press LEFT or RIGHT!\n");
     key = waitpad(J_LEFT | J_RIGHT);
     if (key & J_LEFT) {
@@ -48,8 +48,8 @@ void demo_waitpadup(void) {
 // ==== joypad() ==========================================
 
 void demo_joypad(void) {
-    UINT8 prev_keys = 0;
-    UINT8 keys = 0;
+    uint8_t prev_keys = 0;
+    uint8_t keys = 0;
 
     printf("Press what you want\n\n");
 
