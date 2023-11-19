@@ -46,7 +46,7 @@ If you want to cleanup the folder from all generated files
 
     make clean
 
-You can now run the generated `.gb` file with our favorite emulator: (Sameboy)[https://sameboy.github.io/].
+You can now run the generated `.gb` file with our favorite emulator: [Sameboy](https://sameboy.github.io/).
 
 ## Install and using Sameboy
 
@@ -56,7 +56,7 @@ and libretro as its core. It also includes a text-based debugger with an express
 ## Building assets
 
 Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
-You will first need to install (img2gb)[https://github.com/flozz/img2gb], wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
+You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
 The installation can be done with the following command:
 
     sudo pip install img2gb
@@ -94,15 +94,15 @@ I have been modified and even including news since I forked the project.
     Command	                Keys
     -----------------------------------------------
     Open Menu	            Escape
-    Open ROM	            Ctrl + O
-    Reset	                Ctrl + R
-    Pause	                Ctrl + P
-    Save state	            Ctrl + (0 - 9)
-    Load state	            Ctrl + Shift + (0 - 9)
-    Toggle Fullscreen	    Ctrl + F
-    Mute / Unmute	        Alt + M
-    Toggle audio channel	Alt + (1 - 4)
-    Break Debugger	        Ctrl + C
+    Open ROM                Ctrl + O
+    Reset                   Ctrl + R
+    Pause                   Ctrl + P
+    Save state              Ctrl + (0 - 9)
+    Load state              Ctrl + Shift + (0 - 9)
+    Toggle Fullscreen       Ctrl + F
+    Mute / Unmute           Alt + M
+    Toggle audio channel    Alt + (1 - 4)
+    Break Debugger          Ctrl + C
 
 It was really difficult for me to find the commands online, so posting here for future reference.
 
