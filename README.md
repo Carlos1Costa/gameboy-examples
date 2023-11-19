@@ -53,11 +53,23 @@ You can now run the generated `.gb` file with our favorite emulator: [Sameboy](h
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
 and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
 
+To install Sameboy, download the last version from [Sameboy releases](https://github.com/LIJI32/SameBoy/releases/).
+You will need a couple of packages:
+
+* GCC and make (already installed)
+* SDL frontend: libsdl2 (`sudo apt install libsdl2-dev` will resolve)
+* [rgbds](https://github.com/gbdev/rgbds/releases/) for boot ROM compilation
+* [cppp](https://github.com/BR903/cppp) for cleaning up headers when compiling SameBoy as a library
+
+After extract the Sameboy source and fill out all the dependencies above, run
+`make` and `sudo make install` to install Sameboy. To test, call `sameboy Hello.gb` to see
+the example 01 running in the emulator.
+
 # Examples Index (GameBoy Code)
 
 This repository contains example programs for the Nintendo GameBoy video game console. 
 The examples are originally related to this git https://github.com/flozz/gameboy-examples repository.
-I have been modified and even including news since I forked the project.
+I have been modified and even including news since I forked the project. Have fun!
 
 
 | Screenshot                                              | Name                                                       | Description                                                                  |
