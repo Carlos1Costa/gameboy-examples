@@ -53,18 +53,6 @@ You can now run the generated `.gb` file with our favorite emulator: [Sameboy](h
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
 and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
 
-## Building assets
-
-Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
-You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
-The installation can be done with the following command:
-
-    sudo pip install img2gb
-
-Then, just run the following command (from the example directory):
-
-    make assets
-
 # Examples Index (GameBoy Code)
 
 This repository contains example programs for the Nintendo GameBoy video game console. 
@@ -105,6 +93,18 @@ It was really difficult for me to find the commands online, so posting here for 
     Mute / Unmute           Alt + M
     Toggle audio channel    Alt + (1 - 4)
     Break Debugger          Ctrl + C
+
+## Building assets
+
+Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
+You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
+The installation can be done with the following command:
+
+    sudo pip install img2gb
+
+Then, just run the following command (from the example directory):
+
+    make assets
 
 # License
 
