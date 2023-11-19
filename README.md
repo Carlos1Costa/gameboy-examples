@@ -89,7 +89,22 @@ I have been modified and even including news since I forked the project.
 
 # Miscellaneous
 
-TODO
+## Default keyboard shortcuts for the SameBoy emulator:
+
+    Command	                Keys
+    -----------------------------------------------
+    Open Menu	            Escape
+    Open ROM	            Ctrl + O
+    Reset	                Ctrl + R
+    Pause	                Ctrl + P
+    Save state	            Ctrl + (0 - 9)
+    Load state	            Ctrl + Shift + (0 - 9)
+    Toggle Fullscreen	    Ctrl + F
+    Mute / Unmute	        Alt + M
+    Toggle audio channel	Alt + (1 - 4)
+    Break Debugger	        Ctrl + C
+
+It was really difficult for me to find the commands online, so posting here for future reference.
 
 # License
 
