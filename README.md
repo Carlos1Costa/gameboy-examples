@@ -7,15 +7,11 @@ I updated the toolchain because the original was out of date. I've also added my
 choice of tools, emulator setup for debugging, enriched the examples with supporting text, and brought 
 in other/new examples. In the end, this repository is something completely new!
 
-I hope you don't care to use GNU/Linux, but if you don't even know what this means, sorry but this documents
+I hope you don't care to use **GNU/Linux**, but if you don't even know what this means, sorry but this documents
 may be difficult for you. Also, contributions to show the same setup in a Windows machine, is more then welcome.
 Send me your patches. Thanks in advance.
 
-## Prepare the Linux enviromment
-
-**Before anything**: Download and install VSCode for your Linux distribution https://code.visualstudio.com/
-
-### Install the Toolchain
+## Install the Toolchain
 
 Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
 [GBDK](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
@@ -57,6 +53,18 @@ You can now run the generated `.gb` file with our favorite emulator: (Sameboy)[h
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
 and a libretro core. It also includes a text-based debugger with an expression evaluator.
 
+## Building assets
+
+Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
+
+You will first need to [install img2gb][img2gb-install]. This can be done with the following command:
+
+    sudo pip install img2gb
+
+Then, just run the following command (from the example directory):
+
+    make assets
+
 # Examples Index (GameBoy Code)
 
 This repository contains example programs for the Nintendo GameBoy video game console. 
@@ -79,17 +87,9 @@ I have been modified and even including news since I forked the project.
 | ![](./11-custom-text/text_screenshot.png)               | [11 - Custom Text](./11-custom-text/)                      | Handle and display text                                                      |
 
 
-## Building assets (Linux)
+# Miscellaneous
 
-Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
-
-You will first need to [install img2gb][img2gb-install]. This can be done with the following command:
-
-    sudo pip install img2gb
-
-Then, just run the following command (from the example directory):
-
-    make assets
+TODO
 
 # License
 
