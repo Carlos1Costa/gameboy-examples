@@ -9,8 +9,8 @@ GBDK_HOME = ../gbdk/
 LCC = $(GBDK_HOME)bin/lcc 
 
 # You can uncomment the line below to turn on debug output
-# LCCFLAGS += -debug     # Uncomment to enable debug output
-LCCFLAGS += -Wa-l -Wl-m -Wl-j -v     # Uncomment for lcc verbose output
+# LCCFLAGS += -debug
+LCCFLAGS += -Wa-l -Wl-m -Wl-j -v
 
 # You can set the name of the .gb ROM file here
 PROJECTNAME    = Hello
@@ -26,4 +26,4 @@ $(BINS): $(CSOURCES) $(ASMSOURCES)
 		$(LCC) $(LCCFLAGS) -o $@ $(CSOURCES) $(ASMSOURCES)
 
 clean:
-		rm --verbose -f *.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm
+		rm --verbose -f *.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm *.noi

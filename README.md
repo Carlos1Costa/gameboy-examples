@@ -18,11 +18,11 @@ Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) C
 Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
 out of scope of this tutorial. 
 
-You also will need GNU Make (install build-essential), SDL and git.
-The packages can be installed with the following command on Debian / Ubuntu:
+You also will need GNU Make (install build-essential) and git.
+The packages can be installed with the following command on Debian/Ubuntu:
     
     sudo apt update
-    sudo apt install build-essential git build-essential
+    sudo apt install build-essential git
 
 Clone this repository:
 
@@ -51,13 +51,13 @@ You can now run the generated `.gb` file with our favorite emulator: (Sameboy)[h
 ## Install and using Sameboy
 
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
-and a libretro core. It also includes a text-based debugger with an expression evaluator.
+and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
 
 ## Building assets
 
 Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
-
-You will first need to [install img2gb][img2gb-install]. This can be done with the following command:
+You will first need to install (img2gb)[https://github.com/flozz/img2gb], wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
+The installation can be done with the following command:
 
     sudo pip install img2gb
 
