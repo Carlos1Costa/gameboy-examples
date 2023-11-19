@@ -3,14 +3,14 @@
 #
 
 # If you move this project you can change the directory 
-# to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/"
-GBDK_HOME = ../gbdk-2020/
+# to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/")
+GBDK_HOME = ../gbdk/
 
-LCC = $(GBDK_HOME)bin/lcc -Wa-l -Wl-m -Wl-j 
+LCC = $(GBDK_HOME)bin/lcc 
 
 # You can uncomment the line below to turn on debug output
-# LCCFLAGS += -debug # Uncomment to enable debug output
-# LCCFLAGS += -v     # Uncomment for lcc verbose output
+# LCCFLAGS += -debug     # Uncomment to enable debug output
+LCCFLAGS += -Wa-l -Wl-m -Wl-j -v     # Uncomment for lcc verbose output
 
 # You can set the name of the .gb ROM file here
 PROJECTNAME    = Hello
@@ -26,4 +26,4 @@ $(BINS): $(CSOURCES) $(ASMSOURCES)
 		$(LCC) $(LCCFLAGS) -o $@ $(CSOURCES) $(ASMSOURCES)
 
 clean:
-		rm -f *.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm
+		rm --verbose -f *.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm

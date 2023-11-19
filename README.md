@@ -1,35 +1,49 @@
-# Prepare the Linux enviromment
+# Gameboy Examples
+
+Hi. My name is Carlos, and this is my first experiment with Homebrew game development. I took the idea
+of fork this project [link](https://github.com/flozz/gameboy-examples), merci Fabien LOISON =)
+
+I updated the toolchain because the original was out of date. I've also added my own opinion on the 
+choice of tools, emulator setup for debugging, enriched the examples with supporting text, and brought 
+in other/new examples. In the end, this repository is something completely new!
+
+I hope you don't care to use GNU/Linux, but if you don't even know what this means, sorry but this documents
+may be difficult for you. Also, contributions to show the same setup in a Windows machine, is more then welcome.
+Send me your patches. Thanks in advance.
+
+## Prepare the Linux enviromment
 
 **Before anything**: Download and install VSCode for your Linux distribution https://code.visualstudio.com/
 
-Then you need to install some dependencies: [SDCC](https://sdcc.sourceforge.net/) 
-(with its [sdcc-libraries](https://packages.debian.org/sid/sdcc-libraries)), 
-GNU Make (install build-essential), and git.
+### Install the Toolchain
 
-This can be installed with the following command on Debian / Ubuntu:
+Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
+[GBDK](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
+Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
+out of scope of this tutorial. 
+
+You also will need GNU Make (install build-essential), SDL and git.
+The packages can be installed with the following command on Debian / Ubuntu:
     
     sudo apt update
-    sudo apt install build-essential sdcc sdcc-libraries git build-essential
+    sudo apt install build-essential git build-essential
 
-Then clone this repository and get submodules:
+Clone this repository:
 
     git clone https://github.com/Carlos1Costa/gameboy-examples
     cd gameboy-examples
-    git submodule init
-    git submodule update
 
-Then you have to build the gbdk-n library (this needs to be done only once):
+Then you have to download the GBDK library (this needs to be done only once). Dont worry, SDCC
+will be shipped together with GBDK. Extract inside the cloned dir, the extraction will produce a dir
+called `gbdk`:
 
-    cd gbdk-n
-    make
-    cd ..
+    tar -zxvf gbdk-linux64.tar.gz
 
-Finally, you can build examples with the `make` command from the directory of the example. 
+Finally, you can build examples with the `make` command from the directory of the example itself. 
 For example, if you want to build the "Hello World" example, you will have to run the following commands:
 
     cd 01-hello-world/
     make
-
 
 If you want to cleanup the folder from all generated files 
 (`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
@@ -50,8 +64,6 @@ The examples are originally related to this git https://github.com/flozz/gameboy
 I have been modified and even including news since I forked the project.
 
 
-| Screenshot                                              | Name                                                       | Description                                                                  |
-|---------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------|
 | ![](./01-hello-world/hello_screenshot.png)              | [01 - Hello World](./01-hello-world/)                      | Simple program that prints "Hello World" on the screen                       |
 | ![](./02-gamepad/gamepad_screenshot.gif)                | [02 - Gamepad](./02-gamepad/)                              | Simple program shows how to use gamepad in a GameBoy program                 |
 | ![](./03-tic-tac-toe/tictactoe_screenshot.gif)          | [03 - Tic Tac Toe](./03-tic-tac-toe/)                      | A complete example project to show how to make a simple game for the GameBoy |
