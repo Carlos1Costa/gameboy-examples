@@ -2,15 +2,15 @@
 # Simple Makefile that compiles all .c and .s files in the same folder
 #
 
-# If you move this project you can change the directory 
-# to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/")
+# NOTE: If you move this project you can change the directory 
+#       to match your GBDK root directory (ex: GBDK_HOME = "/home/user/GBDK/")
 GBDK_HOME = ../gbdk/
 
-LCC = $(GBDK_HOME)bin/lcc 
+LCC = $(GBDK_HOME)bin/lcc
+LCCFLAGS += -Wa-l -Wl-m -Wl-j -v 
 
 # You can uncomment the line below to turn on debug output
 # LCCFLAGS += -debug
-LCCFLAGS += -Wa-l -Wl-m -Wl-j -v
 
 # You can set the name of the .gb ROM file here
 PROJECTNAME    = Hello
