@@ -11,7 +11,7 @@ I hope you don't care to use **GNU/Linux**, but if you don't even know what this
 may be difficult for you. Also, contributions to show the same setup in a Windows machine, is more then welcome.
 Send me your patches. Thanks in advance.
 
-## Install the Toolchain
+## Install the toolchain
 
 Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
 [GBDK](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
@@ -76,6 +76,8 @@ I have been modified and even including news since I forked the project.
 
 
 # Miscellaneous
+
+Everything else section.
 
 ## Default keyboard shortcuts for the SameBoy emulator
 
