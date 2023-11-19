@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <gb/console.h>
-#include <gb/gb.h>
+#include <gbdk/console.h>
+#include <gbdk/platform.h>
 #include "helpers.h"
 
 void title_screen(void) {

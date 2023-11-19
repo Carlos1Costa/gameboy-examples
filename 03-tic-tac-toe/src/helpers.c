@@ -1,4 +1,4 @@
-#include <gb/console.h>
+#include <gbdk/console.h>
 #include "game.h"
 #include "helpers.h"
 
