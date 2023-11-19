@@ -108,6 +108,10 @@ It was really difficult for me to find the commands online, so posting here for 
     Toggle audio channel    Alt + (1 - 4)
     Break Debugger          Ctrl + C
 
+* Button `A` and `B` are keys `z` and `x` in the keyboard, respectivelly. 
+* Button `START` is the key `enter`, button `RESET` is the `backspace` key.
+* Then you can use the directional keys as the Gameboy's direction pad.
+
 Textual Debugger Documentation https://sameboy.github.io/debugger/
 
 ## Building assets
