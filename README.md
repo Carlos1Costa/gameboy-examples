@@ -1,14 +1,15 @@
 # Gameboy Examples
 
-Hi. My name is Carlos, and this is my first experiment with Homebrew game development. I took the idea
-of fork this project [link](https://github.com/flozz/gameboy-examples), merci Fabien LOISON =)
+Hi. My name is Carlos, and this is my first experiment with Homebrew game development. I had the idea
+of fork this project [link](https://github.com/flozz/gameboy-examples), 
+merci [Fabien LOISON](https://github.com/flozz) 🙂
 
-I updated the toolchain because the original was out of date. I've also added my own opinion on the 
-choice of tools, emulator setup for debugging, enriched the examples with supporting text, and brought 
-in other/new examples. In the end, this repository is something completely new!
+After fork it, I updated the toolchain because the original was doc was out of date. I've also added my own 
+opinion on the choice of tools, emulator setup for debugging, enriched the examples with supporting text, and brought 
+in other examples. In the end, this repository is something completely new!
 
-I hope you don't care to use **GNU/Linux**, but if you don't even know what this means, sorry but this documents
-may be difficult for you. Also, contributions to show the same setup in a Windows machine, is more then welcome.
+I hope you don't care to use **GNU/Linux**, but if you don't even know what this means, sorry but follow theses documents
+may be difficult to you. Also, contributions to show the same setup in a Windows machine, is more then welcome.
 Send me your patches. Thanks in advance.
 
 ## Install the toolchain
