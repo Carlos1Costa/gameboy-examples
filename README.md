@@ -108,6 +108,8 @@ It was really difficult for me to find the commands online, so posting here for 
     Toggle audio channel    Alt + (1 - 4)
     Break Debugger          Ctrl + C
 
+Textual Debugger Documentation https://sameboy.github.io/debugger/
+
 ## Building assets
 
 Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
