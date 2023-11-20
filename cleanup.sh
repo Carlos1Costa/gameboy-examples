@@ -1,5 +1,12 @@
 #!/bin/bash
 
+array=('*.o' '*.lst' '*.map' '*.gb' '*.ihx' '*.sym' '*.cdb' '*.adb' '*.asm' '*.noi')
+
 echo "clean up all the itermediate files in all dirs..."
-find . -name "*.o *.lst *.map *.gb *.ihx *.sym *.cdb *.adb *.asm *.noi" -exec rm -f --verbose {} \;
+
+for glob in "${array[@]}"
+do
+    find . -type f -name "$glob" -not -path "./gbdk/*" -print -delete
+done
+
 echo "DONE."
