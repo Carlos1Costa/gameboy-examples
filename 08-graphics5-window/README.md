@@ -1,6 +1,6 @@
 # GameBoy Example 08: Graphics 5 - window
 
-![Graphics 5](graphics5_screenshot.gif)
+![Graphics 5](graphics5_screenshot.png)
 
 > Window layer example
 
