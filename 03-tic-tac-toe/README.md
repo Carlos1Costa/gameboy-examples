@@ -1,6 +1,6 @@
 # GameBoy Example 03: Tic Tac Toe
 
-![GameBoy Example Tic Tac Toe Screenshot](tictactoe_screenshot.gif)
+![GameBoy Example Tic Tac Toe Screenshot](tictactoe_screenshot.png)
 
 > A complete example project to show how to make a simple game for the GameBoy. This is a text-mode example, there is no graphics yet ;)
 
