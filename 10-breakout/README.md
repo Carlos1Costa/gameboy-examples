@@ -1,6 +1,6 @@
 # GameBoy Example 10: Breakout
 
-![Breakout Screenshot](breakout_screenshot.gif)
+![Breakout Screenshot](breakout_screenshot.png)
 
 > Simple breakout game
 

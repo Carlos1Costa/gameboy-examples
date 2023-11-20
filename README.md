@@ -84,7 +84,7 @@ I have been modified and even including news since I forked the project. Have fu
 | ![](./07-graphics4-sprites/graphics4_screenshot.png)    | [07 - Graphics 4 - sprites](./07-graphics4-sprites/)       | A complete sprite example with an animated player                            |
 | ![](./08-graphics5-window/graphics5_screenshot.png)     | [08 - Graphics 5 - window](./08-graphics5-window/)         | Window layer example                                                         |
 | ![](./09-graphics6-palette/graphics6_screenshot.png)    | [09 - Graphics 6 - palettes](./09-graphics6-palette/)      | Playing with color palettes                                                  |
-| ![](./10-breakout/breakout_screenshot.gif)              | [10 - Breakout](./10-breakout/)                            | Simple breakout game                                                         |
+| ![](./10-breakout/breakout_screenshot.png)              | [10 - Breakout](./10-breakout/)                            | Simple breakout game                                                         |
 | ![](./11-custom-text/text_screenshot.png)               | [11 - Custom Text](./11-custom-text/)                      | Handle and display text                                                      |
 
 
