@@ -1,6 +1,6 @@
 # GameBoy Example 02: Gamepad
 
-![GameBoy Example GamePad Screenshot](gamepad_screenshot.gif)
+![GameBoy Example GamePad Screenshot](gamepad_screenshot.png)
 
 > Simple program shows how to use gamepad in a GameBoy program.
 
