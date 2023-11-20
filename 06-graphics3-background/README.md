@@ -1,6 +1,6 @@
 # GameBoy Example 06: Graphics 3 - background
 
-![Graphics 3](graphics3_screenshot.gif)
+![Graphics 3](graphics3_screenshot.png)
 
 > Background layer scrolling example
 
