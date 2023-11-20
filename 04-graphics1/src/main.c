@@ -1,6 +1,6 @@
 #include <gb/gb.h>
 
-const UINT8 TILESET[] = {
+const uint8_t TILESET[] = {
     // Tile 00: Blank
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -18,7 +18,7 @@ const UINT8 TILESET[] = {
     0x66, 0x00, 0x99, 0x77, 0x99, 0x77, 0x66, 0x66,
 };
 
-const UINT8 TILEMAP[] = {
+const uint8_t TILEMAP[] = {
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 0, 2, 2, 2, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
