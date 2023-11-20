@@ -1,6 +1,6 @@
 # GameBoy Example 07: Graphics 4 - sprites
 
-![Graphics 4](graphics4_screenshot.gif)
+![Graphics 4](graphics4_screenshot.png)
 
 > A complete sprite example with an animated player
 
