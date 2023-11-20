@@ -1,6 +1,6 @@
 # GameBoy Example 09: Graphics 6 - palettes
 
-![Graphics 6](graphics6_screenshot.gif)
+![Graphics 6](graphics6_screenshot.png)
 
 > Playing with color palettes
 

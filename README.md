@@ -1,7 +1,7 @@
 # Gameboy Examples
 
 Hi. My name is Carlos, and this is my first experiment with Homebrew game development. I had the idea
-of fork this project [link](https://github.com/flozz/gameboy-examples), 
+of fork [this](https://github.com/flozz/gameboy-examples) project, 
 merci [Fabien LOISON](https://github.com/flozz) 🙂
 
 After fork it, I updated the toolchain because the original repo was out of date. I've also added my own 
@@ -15,7 +15,7 @@ may be difficult to you. Besides, contributions to show the same setup in a Wind
 ## Install the toolchain
 
 Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
-[GBDK](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
+[GBDK-2020](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
 Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
 out of scope of this tutorial. 
 
@@ -83,7 +83,7 @@ I have been modified and even including news since I forked the project. Have fu
 | ![](./06-graphics3-background/graphics3_screenshot.png) | [06 - Graphics 3 - background](./06-graphics3-background/) | Background layer scrolling example                                           |
 | ![](./07-graphics4-sprites/graphics4_screenshot.png)    | [07 - Graphics 4 - sprites](./07-graphics4-sprites/)       | A complete sprite example with an animated player                            |
 | ![](./08-graphics5-window/graphics5_screenshot.png)     | [08 - Graphics 5 - window](./08-graphics5-window/)         | Window layer example                                                         |
-| ![](./09-graphics6-palette/graphics6_screenshot.gif)    | [09 - Graphics 6 - palettes](./09-graphics6-palette/)      | Playing with color palettes                                                  |
+| ![](./09-graphics6-palette/graphics6_screenshot.png)    | [09 - Graphics 6 - palettes](./09-graphics6-palette/)      | Playing with color palettes                                                  |
 | ![](./10-breakout/breakout_screenshot.gif)              | [10 - Breakout](./10-breakout/)                            | Simple breakout game                                                         |
 | ![](./11-custom-text/text_screenshot.png)               | [11 - Custom Text](./11-custom-text/)                      | Handle and display text                                                      |
 
