@@ -99,7 +99,13 @@ I have been modified and even including news since I forked the project. Have fu
 
 # Miscellaneous
 
-Everything else section.
+Everything else section. To start, here are some nice links and documentations:
+
+* [Game Boy Development community](https://gbdev.io/)
+* [GBDK cross-platform development kit](https://github.com/gbdk-2020/gbdk-2020)
+* [gbdk-2020 Documentation](https://gbdk-2020.github.io/gbdk-2020/docs/api/docs_supported_consoles.html)
+* [Awesome Game Boy Development](https://github.com/gbdev/awesome-gbdev)
+* [Fabien LOISON](https://www.flozz.fr/)
 
 ## Default Keyboard Shortcuts for the SameBoy Emulator
 
