@@ -33,7 +33,7 @@ void demo_joypad(void) {
 
             // ... or "-" if no key is pressed.
         } else {
-            printf("-\n");
+            printf("---\n");
         }
 
         // We keep the pressed keys
