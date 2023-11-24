@@ -1,52 +1,6 @@
 #include <stdio.h>
 #include <gb/gb.h>
 
-// ==== waitpad() =========================================
-
-void demo_waitpad_1(void) {
-    printf("Press START!\n");
-    waitpad(J_START);
-    printf("> Good!");
-}
-
-void demo_waitpad_2(void) {
-    printf("Press A or B!\n");
-    waitpad(J_A | J_B);
-    printf("> Good!");
-}
-
-void demo_waitpad_3(void) {
-    uint8_t key;
-    printf("Press LEFT or RIGHT!\n");
-    key = waitpad(J_LEFT | J_RIGHT);
-    if (key & J_LEFT) {
-        printf("> You pressed LEFT");
-    } else if (key & J_RIGHT) {
-        printf("> You pressed RIGHT");
-    }
-}
-
-// === waitpadup() ========================================
-
-void demo_waitpadup(void) {
-    // Here, if you press "A" one time, you will pass through the two
-    // waitpad() calls
-    printf("Press A!\n");
-    waitpad(J_A);
-    printf("> 1st\n");
-    waitpad(J_A);
-    printf("> 2nd\n");
-
-    // Wait that all buttons are released
-    waitpadup();
-
-    printf("Press A one more time!\n");
-    waitpad(J_A);
-    printf("> 3rd");
-}
-
-// ==== joypad() ==========================================
-
 void demo_joypad(void) {
     uint8_t prev_keys = 0;
     uint8_t keys = 0;
@@ -87,22 +41,8 @@ void demo_joypad(void) {
     }
 }
 
-// ========================================================
-
 void main(void) {
-    printf("==== waitpad() ====\n\n");
-
-    demo_waitpad_1();
-    printf("\n\n");
-    demo_waitpad_2();
-    printf("\n\n");
-    demo_waitpad_3();
-
-    printf("\n\n=== waitpadup() ===\n\n");
-
-    demo_waitpadup();
-
-    printf("\n\n==== joypad() =====\n\n");
+    printf("\n==== joypad() =====\n");
 
     demo_joypad();
 }
