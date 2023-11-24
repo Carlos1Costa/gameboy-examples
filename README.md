@@ -16,6 +16,7 @@ may be difficult to you. Besides, contributions to show the same setup in a Wind
 
 <details>
   <summary>expand me...</summary>
+
 Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
 [GBDK-2020](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
 Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
@@ -28,21 +29,25 @@ The packages can be installed with the following command on Debian/Ubuntu:
     sudo apt install build-essential git
 
 Clone this repository:
+
     git clone https://github.com/Carlos1Costa/gameboy-examples
     cd gameboy-examples
 
 Then you have to download the GBDK library (this needs to be done only once). Dont worry, SDCC
 will be shipped together with GBDK. Extract inside the cloned dir, the extraction will produce a dir
 called `gbdk`:
+
     tar -zxvf gbdk-linux64.tar.gz
 
 Finally, you can build examples with the `make` command from the directory of the example itself. 
 For example, if you want to build the "Hello World" example, you will have to run the following commands:
+
     cd 01-hello-world/
     make
 
 If you want to cleanup the folder from all generated files 
 (`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
+
     make clean
 
 You can now run the generated `.gb` file with our favorite emulator: [Sameboy](https://sameboy.github.io/).
@@ -52,11 +57,14 @@ You can now run the generated `.gb` file with our favorite emulator: [Sameboy](h
 
 <details>
   <summary>expand me...</summary>
+
 SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
 and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
 
 To install Sameboy, download the last version from [Sameboy releases](https://github.com/LIJI32/SameBoy/releases/).
+
 You will need a couple of packages:
+
 * GCC and make (already installed)
 * SDL frontend: libsdl2 (`sudo apt install libsdl2-dev` will resolve)
 * [rgbds](https://github.com/gbdev/rgbds/releases/) for boot ROM compilation
@@ -97,6 +105,7 @@ Everything else section.
 
 <details>
   <summary>expand me...</summary>
+
 It was really difficult for me to find the commands online, so posting here for future reference.
 
     Command	                Keys
@@ -123,6 +132,7 @@ Textual Debugger Documentation https://sameboy.github.io/debugger/
 
 <details>
   <summary>expand me...</summary>
+
 Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
 You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap.
 
