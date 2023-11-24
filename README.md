@@ -12,59 +12,65 @@ I hope you don't care to use **GNU/Linux**, but if you don't even know what this
 may be difficult to you. Besides, contributions to show the same setup in a Windows machine is embolden and more then welcome.
 ***Send me your patches!*** Thanks in advance.
 
-## Install the toolchain
+# Install the Toolchain
 
-Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
-[GBDK-2020](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
-Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
-out of scope of this tutorial. 
+<details>
+  <summary>expand me...</summary>
+    Its 2023, and the Gameboy Toolchain uses [SDCC](https://sdcc.sourceforge.net/) Compiler and 
+    [GBDK-2020](https://github.com/gbdk-2020/gbdk-2020/releases/) cross-platform development kit.
+    Please opt by download the binary released for Linux, toolchain boostrap is a difficult thing 
+    out of scope of this tutorial. 
 
-You also will need GNU Make (install build-essential) and git.
-The packages can be installed with the following command on Debian/Ubuntu:
-    
-    sudo apt update
-    sudo apt install build-essential git
+    You also will need GNU Make (install build-essential) and git.
+    The packages can be installed with the following command on Debian/Ubuntu:
+        
+        sudo apt update
+        sudo apt install build-essential git
 
-Clone this repository:
+    Clone this repository:
 
-    git clone https://github.com/Carlos1Costa/gameboy-examples
-    cd gameboy-examples
+        git clone https://github.com/Carlos1Costa/gameboy-examples
+        cd gameboy-examples
 
-Then you have to download the GBDK library (this needs to be done only once). Dont worry, SDCC
-will be shipped together with GBDK. Extract inside the cloned dir, the extraction will produce a dir
-called `gbdk`:
+    Then you have to download the GBDK library (this needs to be done only once). Dont worry, SDCC
+    will be shipped together with GBDK. Extract inside the cloned dir, the extraction will produce a dir
+    called `gbdk`:
 
-    tar -zxvf gbdk-linux64.tar.gz
+        tar -zxvf gbdk-linux64.tar.gz
 
-Finally, you can build examples with the `make` command from the directory of the example itself. 
-For example, if you want to build the "Hello World" example, you will have to run the following commands:
+    Finally, you can build examples with the `make` command from the directory of the example itself. 
+    For example, if you want to build the "Hello World" example, you will have to run the following commands:
 
-    cd 01-hello-world/
-    make
+        cd 01-hello-world/
+        make
 
-If you want to cleanup the folder from all generated files 
-(`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
+    If you want to cleanup the folder from all generated files 
+    (`*.rel`, `*.lst`, `*.gb`,...), you can use the following command:
 
-    make clean
+        make clean
 
-You can now run the generated `.gb` file with our favorite emulator: [Sameboy](https://sameboy.github.io/).
+    You can now run the generated `.gb` file with our favorite emulator: [Sameboy](https://sameboy.github.io/).
+</details>
 
-## Install and using Sameboy
+# Install and Using Sameboy Emulator
 
-SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
-and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
+<details>
+  <summary>expand me...</summary>
+    SameBoy is an open source Game Boy (DMG) and Game Boy Color (CGB) emulator, written in portable C. Sameboy runs in a SDL frontend for Linux, 
+    and libretro as its core. It also includes a text-based debugger with an expression evaluator. Pretty good tool for the homebrew endeavour.
 
-To install Sameboy, download the last version from [Sameboy releases](https://github.com/LIJI32/SameBoy/releases/).
-You will need a couple of packages:
+    To install Sameboy, download the last version from [Sameboy releases](https://github.com/LIJI32/SameBoy/releases/).
+    You will need a couple of packages:
 
-* GCC and make (already installed)
-* SDL frontend: libsdl2 (`sudo apt install libsdl2-dev` will resolve)
-* [rgbds](https://github.com/gbdev/rgbds/releases/) for boot ROM compilation
-* [cppp](https://github.com/BR903/cppp) for cleaning up headers when compiling SameBoy as a library
+    * GCC and make (already installed)
+    * SDL frontend: libsdl2 (`sudo apt install libsdl2-dev` will resolve)
+    * [rgbds](https://github.com/gbdev/rgbds/releases/) for boot ROM compilation
+    * [cppp](https://github.com/BR903/cppp) for cleaning up headers when compiling SameBoy as a library
 
-After extract the Sameboy source and fill out all the dependencies above, run
-`make` and `sudo make install` to install Sameboy. To test, call `sameboy Hello.gb` to see
-the example 01 running in the emulator.
+    After extract the Sameboy source and fill out all the dependencies above, run
+    `make` and `sudo make install` to install Sameboy. To test, call `sameboy Hello.gb` to see
+    the example 01 running in the emulator.
+</details>
 
 # Examples Index (GameBoy Code)
 
@@ -92,40 +98,46 @@ I have been modified and even including news since I forked the project. Have fu
 
 Everything else section.
 
-## Default keyboard shortcuts for the SameBoy emulator
+## Default Keyboard Shortcuts for the SameBoy Emulator
 
-It was really difficult for me to find the commands online, so posting here for future reference.
+<details>
+  <summary>expand me...</summary>
+    It was really difficult for me to find the commands online, so posting here for future reference.
 
-    Command	                Keys
-    -----------------------------------------------
-    Open Menu               Escape
-    Open ROM                Ctrl + O
-    Reset                   Ctrl + R
-    Pause                   Ctrl + P
-    Save state              Ctrl + (0 - 9)
-    Load state              Ctrl + Shift + (0 - 9)
-    Toggle Fullscreen       Ctrl + F
-    Mute / Unmute           Alt + M
-    Toggle audio channel    Alt + (1 - 4)
-    Break Debugger          Ctrl + C
+        Command	                Keys
+        -----------------------------------------------
+        Open Menu               Escape
+        Open ROM                Ctrl + O
+        Reset                   Ctrl + R
+        Pause                   Ctrl + P
+        Save state              Ctrl + (0 - 9)
+        Load state              Ctrl + Shift + (0 - 9)
+        Toggle Fullscreen       Ctrl + F
+        Mute / Unmute           Alt + M
+        Toggle audio channel    Alt + (1 - 4)
+        Break Debugger          Ctrl + C
 
-* Button `A` and `B` are keys `z` and `x` in the keyboard, respectivelly. 
-* Button `START` is the key `enter`, button `RESET` is the `backspace` key.
-* Then you can use the directional keys as the Gameboy's direction pad.
+    * Button `A` and `B` are keys `z` and `x` in the keyboard, respectivelly. 
+    * Button `START` is the key `enter`, button `RESET` is the `backspace` key.
+    * Then you can use the directional keys as the Gameboy's direction pad.
 
-Textual Debugger Documentation https://sameboy.github.io/debugger/
+    Textual Debugger Documentation https://sameboy.github.io/debugger/
+</details>
 
-## Building assets
+## Building Assets
 
-Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
-You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
-The installation can be done with the following command:
+<details>
+  <summary>expand me...</summary>
+    Some of the examples have assets (tilesets, tilemaps, sprites,...). If you changes the images, you will have to rebuild assets.
+    You will first need to install [img2gb](https://github.com/flozz/img2gb), wich is a tool to Convert Images to GameBoy Tileset and Tilemap. 
+    The installation can be done with the following command:
 
-    sudo pip install img2gb
+        sudo pip install img2gb
 
-Then, just run the following command (from the example directory):
+    Then, just run the following command (from the example directory):
 
-    make assets
+        make assets
+</details>
 
 # License
 
