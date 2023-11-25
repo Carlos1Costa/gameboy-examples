@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <gb/gb.h>
+
 
 void demo_joypad(void) {
     uint8_t prev_keys = 0;
@@ -41,9 +43,9 @@ void demo_joypad(void) {
     }
 }
 
-void main(void) {
+int main(void) {
     printf("\n==== joypad() =====\n");
 
     demo_joypad();
+    return 0;
 }
-
