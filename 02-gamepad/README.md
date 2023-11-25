@@ -1,5 +1,7 @@
 # GameBoy Example 02: Gamepad
 
+> This text is based on [https://blog.flozz.fr/2018/10/15/developpement-gameboy-2-utiliser-le-gamepad/](https://blog.flozz.fr/2018/10/15/developpement-gameboy-2-utiliser-le-gamepad/)
+
 The GameBoy has 8 buttons that our program can use to receive user input:
 
 * `D-PAD` composed of 4 buttons `up`, `down`, `left`, `right`. It is most often used to move the character or an object, and to navigate the menus.

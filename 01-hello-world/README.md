@@ -1,5 +1,7 @@
 # GameBoy Example 01: Hello World
 
+> This text is based on [https://blog.flozz.fr/2019/09/18/developpement-gameboy-1bis-re-hello-world/](https://blog.flozz.fr/2019/09/18/developpement-gameboy-1bis-re-hello-world/)
+
 Here is a brief resume of the GameBoy platform.
 
 * The first GameBoy, also called DMG (for Dot Matrix Game), is a portable console released in 1989 in Japan. The GameBoy technical characteristics:
