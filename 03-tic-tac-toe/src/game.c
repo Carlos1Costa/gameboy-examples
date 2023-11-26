@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <stdint.h>
+#include <gb/gb.h>
 #include <gbdk/console.h>
 #include <gbdk/platform.h>
+
 #include "helpers.h"
 #include "game.h"
 
 // Game state variables
-UINT8 GAME_BOARD[GAME_BOARD_SIZE * GAME_BOARD_SIZE];
-UINT8 GAME_CURSOR_X;
-UINT8 GAME_CURSOR_Y;
+uint8_t GAME_BOARD[GAME_BOARD_SIZE * GAME_BOARD_SIZE];
+uint8_t GAME_CURSOR_X;
+uint8_t GAME_CURSOR_Y;
 
 void game_draw_board(void) {
     clear_screen();
@@ -30,11 +33,11 @@ void game_draw_board(void) {
 }
 
 void game_draw_state(void) {
-    UINT8 x;
-    UINT8 y;
-    UINT8 graph_x;
-    UINT8 graph_y;
-    UINT8 cell;
+    uint8_t x;
+    uint8_t y;
+    uint8_t graph_x;
+    uint8_t graph_y;
+    uint8_t cell;
 
     for (cell = 0 ; cell < GAME_BOARD_SIZE * GAME_BOARD_SIZE ; cell += 1) {
         x = cell % GAME_BOARD_SIZE;
@@ -46,11 +49,11 @@ void game_draw_state(void) {
     }
 }
 
-void game_draw_cursor(UINT8 cursor_char) {
-    UINT8 graph_x = GAME_BOARD_X + GAME_CURSOR_X * 4 + 1;
-    UINT8 graph_y = GAME_BOARD_Y + GAME_CURSOR_Y * 4 + 1;
-    UINT8 cx;
-    UINT8 cy;
+void game_draw_cursor(uint8_t cursor_char) {
+    uint8_t graph_x = GAME_BOARD_X + GAME_CURSOR_X * 4 + 1;
+    uint8_t graph_y = GAME_BOARD_Y + GAME_CURSOR_Y * 4 + 1;
+    uint8_t cx;
+    uint8_t cy;
     for (cy = graph_y - 1 ; cy <= graph_y + 1 ; cy += 1) {
         for (cx = graph_x - 1 ; cx <= graph_x + 1 ; cx += 1) {
             if (cx == graph_x && cy == graph_y) {
@@ -66,7 +69,7 @@ void game_clear_cursor() {
     game_draw_cursor(' ');
 }
 
-void game_draw_game_over(UINT8 status) {
+void game_draw_game_over(uint8_t status) {
     clear_line(1);
     switch (status) {
         case GAME_STATUS_WON:
@@ -90,8 +93,8 @@ void game_draw_game_over(UINT8 status) {
 }
 
 void game_player_play(void) {
-    UINT8 key;
-    UINT8 cell;
+    uint8_t key;
+    uint8_t cell;
 
     while (1) {
         game_draw_cursor('/');
@@ -121,13 +124,13 @@ void game_player_play(void) {
 }
 
 void game_computer_play(void) {
-    UINT8 x;
-    UINT8 y;
-    UINT8 cell;
-    UINT8 player_score;
-    UINT8 computer_score;
-    INT8 lose_cell = -1;
-    INT8 last_empty_cell = -1;
+    uint8_t x;
+    uint8_t y;
+    uint8_t cell;
+    uint8_t player_score;
+    uint8_t computer_score;
+    int8_t lose_cell = -1;
+    int8_t last_empty_cell = -1;
 
     // Check lines
     for (y = 0 ; y < GAME_BOARD_SIZE ; y += 1) {
@@ -253,15 +256,15 @@ void game_computer_play(void) {
     }
 }
 
-UINT8 game_check_status(void) {
-    UINT8 x;
-    UINT8 y;
-    UINT8 cell;
-    UINT8 player_score_h;
-    UINT8 player_score_v;
-    UINT8 computer_score_h;
-    UINT8 computer_score_v;
-    UINT8 has_empty_cells = 0;
+uint8_t game_check_status(void) {
+    uint8_t x;
+    uint8_t y;
+    uint8_t cell;
+    uint8_t player_score_h;
+    uint8_t player_score_v;
+    uint8_t computer_score_h;
+    uint8_t computer_score_v;
+    uint8_t has_empty_cells = 0;
 
     // Check lines and columns
     for (y = 0 ; y < GAME_BOARD_SIZE ; y += 1) {
@@ -348,7 +351,7 @@ UINT8 game_check_status(void) {
 }
 
 void game_init(void) {
-    UINT8 i = GAME_BOARD_SIZE * GAME_BOARD_SIZE;
+    uint8_t i = GAME_BOARD_SIZE * GAME_BOARD_SIZE;
 
     // Clear board state
     while (i) {
@@ -362,7 +365,7 @@ void game_init(void) {
 }
 
 void game(void) {
-    UINT8 status;
+    uint8_t status;
 
     game_init();
     game_draw_board();

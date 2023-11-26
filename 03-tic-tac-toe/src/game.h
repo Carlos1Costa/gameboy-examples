@@ -2,6 +2,7 @@
 #define _GAME_H
 
 #include <types.h>
+#include <stdint.h>
 
 #define GAME_BOARD_X      4
 #define GAME_BOARD_Y      4
@@ -25,13 +26,13 @@ void game_draw_state(void);
 // Displays the player's cursor in the selected cell
 // NOTE: We take the char to display as parameter to allow us to use the same
 // function to clear the cursor by writing spaces (see next function)
-void game_draw_cursor(UINT8 cursor_char);
+void game_draw_cursor(uint8_t cursor_char);
 
 // Clears the player's cursor
 void game_clear_cursor();
 
 // Displays the game over screen
-void game_draw_game_over(UINT8 status);
+void game_draw_game_over(uint8_t status);
 
 // Makes the player play (allow the player to move the cursor and select a
 // cell)
@@ -45,7 +46,7 @@ void game_computer_play(void);
 // * Does the player won?
 // * Does the computer won?
 // * Is the game terminated (no more empty cell)?
-UINT8 game_check_status(void);
+uint8_t game_check_status(void);
 
 // Initialize global game-state variables for a new game
 void game_init(void);

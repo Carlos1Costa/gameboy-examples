@@ -3,8 +3,8 @@
 #include "helpers.h"
 
 void clear_screen(void) {
-    UINT8 x;
-    UINT8 y = ROWS;
+    uint8_t x;
+    uint8_t y = ROWS;
     while (y) {
         y -= 1;
         x = COLS;
@@ -16,8 +16,8 @@ void clear_screen(void) {
     }
 }
 
-void clear_line(UINT8 y) {
-    UINT8 x = COLS;
+void clear_line(uint8_t y) {
+    uint8_t x = COLS;
     while (x) {
         x -= 1;
         gotoxy(x, y);
@@ -25,6 +25,6 @@ void clear_line(UINT8 y) {
     }
 }
 
-UINT8 coord_2d_to_1d(UINT8 x, UINT8 y) {
+uint8_t coord_2d_to_1d(uint8_t x, uint8_t y) {
     return y * GAME_BOARD_SIZE + x;
 }
