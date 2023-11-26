@@ -2,11 +2,11 @@
 
 array=('*.o' '*.lst' '*.map' '*.gb' '*.ihx' '*.sym' '*.cdb' '*.adb' '*.asm' '*.noi')
 
-echo "\nclean up all the itermediate files in all dirs...\n"
+echo "clean up all the itermediate files in all dirs..."
 
 for glob in "${array[@]}"
 do
     find . -type f -name "$glob" -not -path "./gbdk/*" -print -delete
 done
 
-echo "\nDONE.\n"
+echo "DONE."
