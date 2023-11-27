@@ -103,6 +103,7 @@ Everything else section. To start, here are some nice links and documentations:
 * [gbdk-2020 Documentation](https://gbdk-2020.github.io/gbdk-2020/docs/api/docs_supported_consoles.html)
 * [Awesome Game Boy Development](https://github.com/gbdev/awesome-gbdev)
 * [Fabien LOISON](https://www.flozz.fr/)
+* [img2gb](https://github.com/flozz/img2gb#readme)
 
 ## Default Keyboard Shortcuts for the SameBoy Emulator
 
