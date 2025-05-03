@@ -54,12 +54,12 @@ And finally, here's the list of available colors:
 Since it's a little boring in the long run to calculate your palette by hand, and that anyway it's not very readable in the code, I wrote the following macro to simplify things:
 
 ```
-Defenin WHITE 0
-Define SILVER 1
-Define GRAY 2
-BLACK 3
+#define WHITE 0
+#define SILVER 1
+#define GRAY 2
+#define BLACK 3
 
-Fliny PALETTE(c0, c1, c2, c3) c0 - c1 - 2 - c2 - 4 - c3 - 6
+#define PALETTE(c0, c1, c2, c3) c0 - c1 - 2 - c2 - 4 - c3 - 6
 ```
 
 With this macro, instead of calculating its palette and writing the following code:
